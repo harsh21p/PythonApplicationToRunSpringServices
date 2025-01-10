@@ -1,0 +1,52 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.2)
+
+2025-01-10T13:49:43.813Z  INFO 13384 --- [           main] c.d.d.DiscoveryServerApplication         : Starting DiscoveryServerApplication v1.0-SNAPSHOT using Java 23.0.1 with PID 13384 (C:\Users\YASH\Desktop\App22\dist\dis.jar started by YASH in C:\Users\YASH\Desktop\App22\dist)
+2025-01-10T13:49:43.828Z  INFO 13384 --- [           main] c.d.d.DiscoveryServerApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-01-10T13:49:45.718Z  INFO 13384 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=af4abf12-fbcb-3566-a8b4-a6a69f55a0d7
+2025-01-10T13:49:45.793Z  WARN 13384 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-01-10T13:49:45.799Z  WARN 13384 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-01-10T13:49:46.222Z  INFO 13384 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8761 (http)
+2025-01-10T13:49:46.248Z  INFO 13384 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-10T13:49:46.249Z  INFO 13384 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2025-01-10T13:49:46.312Z  INFO 13384 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-10T13:49:46.313Z  INFO 13384 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2273 ms
+2025-01-10T13:49:48.091Z  INFO 13384 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2025-01-10T13:49:48.094Z  INFO 13384 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2025-01-10T13:49:48.536Z  INFO 13384 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2025-01-10T13:49:48.537Z  INFO 13384 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2025-01-10T13:49:50.016Z  WARN 13384 --- [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-01-10T13:49:50.065Z  INFO 13384 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-01-10T13:49:50.109Z  INFO 13384 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-01-10T13:49:50.110Z  INFO 13384 --- [           main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2025-01-10T13:49:50.113Z  INFO 13384 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1736516990112 with initial instances count: 0
+2025-01-10T13:49:50.229Z  INFO 13384 --- [           main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2025-01-10T13:49:50.236Z  WARN 13384 --- [           main] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
+2025-01-10T13:49:50.266Z  INFO 13384 --- [           main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2025-01-10T13:49:50.266Z  INFO 13384 --- [           main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2025-01-10T13:49:50.294Z  INFO 13384 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-01-10T13:49:50.422Z  INFO 13384 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application UNKNOWN with eureka with status UP
+2025-01-10T13:49:50.452Z  INFO 13384 --- [       Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2025-01-10T13:49:50.454Z  INFO 13384 --- [       Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2025-01-10T13:49:50.455Z  INFO 13384 --- [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2025-01-10T13:49:50.455Z  INFO 13384 --- [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2025-01-10T13:49:50.455Z  INFO 13384 --- [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2025-01-10T13:49:50.459Z  INFO 13384 --- [       Thread-9] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2025-01-10T13:49:50.483Z  INFO 13384 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8761 (http) with context path '/'
+2025-01-10T13:49:50.487Z  INFO 13384 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8761
+2025-01-10T13:49:50.521Z  INFO 13384 --- [           main] c.d.d.DiscoveryServerApplication         : Started DiscoveryServerApplication in 7.499 seconds (process running for 8.26)
+2025-01-10T13:49:54.348Z  INFO 13384 --- [nio-8761-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-10T13:49:54.349Z  INFO 13384 --- [nio-8761-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-01-10T13:49:54.350Z  INFO 13384 --- [nio-8761-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-01-10T13:49:54.953Z  INFO 13384 --- [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/DESKTOP-3M97090:api-gateway:8080 with status UP (replication=false)
+2025-01-10T13:50:05.784Z  INFO 13384 --- [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ENROLLMENT-SERVICE/DESKTOP-3M97090:enrollment-service:0 with status UP (replication=false)
+2025-01-10T13:50:11.439Z  INFO 13384 --- [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DOCTOR-SERVICE/DESKTOP-3M97090:doctor-service:0 with status UP (replication=false)
+2025-01-10T13:50:16.818Z  INFO 13384 --- [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance LAB-SERVICE/DESKTOP-3M97090:lab-service:0 with status UP (replication=false)
+2025-01-10T13:50:50.457Z  INFO 13384 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms

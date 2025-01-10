@@ -1,0 +1,58 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.2)
+
+2025-01-10T13:49:59.687Z  INFO 10620 --- [doctor-service] [           main] com.dental.doctor.DoctorApplication      : Starting DoctorApplication v1.0-SNAPSHOT using Java 23.0.1 with PID 10620 (C:\Users\YASH\Desktop\App22\dist\doc.jar started by YASH in C:\Users\YASH\Desktop\App22\dist)
+2025-01-10T13:49:59.696Z  INFO 10620 --- [doctor-service] [           main] com.dental.doctor.DoctorApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-01-10T13:50:01.383Z  INFO 10620 --- [doctor-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-10T13:50:01.615Z  INFO 10620 --- [doctor-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 215 ms. Found 1 JPA repository interface.
+2025-01-10T13:50:02.186Z  INFO 10620 --- [doctor-service] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6b211e33-2c7a-3007-ab7a-1ae05d435232
+2025-01-10T13:50:02.531Z  WARN 10620 --- [doctor-service] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-01-10T13:50:02.539Z  WARN 10620 --- [doctor-service] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-01-10T13:50:02.549Z  WARN 10620 --- [doctor-service] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-01-10T13:50:02.553Z  WARN 10620 --- [doctor-service] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-01-10T13:50:02.558Z  WARN 10620 --- [doctor-service] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-01-10T13:50:03.310Z  INFO 10620 --- [doctor-service] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2025-01-10T13:50:03.355Z  INFO 10620 --- [doctor-service] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-10T13:50:03.356Z  INFO 10620 --- [doctor-service] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2025-01-10T13:50:03.483Z  INFO 10620 --- [doctor-service] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-10T13:50:03.486Z  INFO 10620 --- [doctor-service] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3575 ms
+2025-01-10T13:50:04.169Z  INFO 10620 --- [doctor-service] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-10T13:50:04.440Z  INFO 10620 --- [doctor-service] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2025-01-10T13:50:04.511Z  INFO 10620 --- [doctor-service] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-10T13:50:05.132Z  INFO 10620 --- [doctor-service] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-10T13:50:05.181Z  INFO 10620 --- [doctor-service] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-10T13:50:06.069Z  INFO 10620 --- [doctor-service] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@584136c1
+2025-01-10T13:50:06.075Z  INFO 10620 --- [doctor-service] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-10T13:50:08.042Z  INFO 10620 --- [doctor-service] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-10T13:50:08.271Z  INFO 10620 --- [doctor-service] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-10T13:50:09.077Z  WARN 10620 --- [doctor-service] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-10T13:50:10.029Z  INFO 10620 --- [doctor-service] [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-01-10T13:50:10.172Z  WARN 10620 --- [doctor-service] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-01-10T13:50:10.410Z  INFO 10620 --- [doctor-service] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 59684 (http) with context path '/'
+2025-01-10T13:50:10.414Z  INFO 10620 --- [doctor-service] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 59684
+2025-01-10T13:50:10.429Z  INFO 10620 --- [doctor-service] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-01-10T13:50:10.506Z  INFO 10620 --- [doctor-service] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-01-10T13:50:10.522Z  INFO 10620 --- [doctor-service] [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-10T13:50:10.549Z  INFO 10620 --- [doctor-service] [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-01-10T13:50:10.549Z  INFO 10620 --- [doctor-service] [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-01-10T13:50:10.549Z  INFO 10620 --- [doctor-service] [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-01-10T13:50:10.549Z  INFO 10620 --- [doctor-service] [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-01-10T13:50:10.549Z  INFO 10620 --- [doctor-service] [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-01-10T13:50:10.549Z  INFO 10620 --- [doctor-service] [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-01-10T13:50:10.550Z  INFO 10620 --- [doctor-service] [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-01-10T13:50:11.307Z  INFO 10620 --- [doctor-service] [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-01-10T13:50:11.311Z  INFO 10620 --- [doctor-service] [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-01-10T13:50:11.316Z  INFO 10620 --- [doctor-service] [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-01-10T13:50:11.318Z  INFO 10620 --- [doctor-service] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1736517011318 with initial instances count: 1
+2025-01-10T13:50:11.329Z  INFO 10620 --- [doctor-service] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application DOCTOR-SERVICE with eureka with status UP
+2025-01-10T13:50:11.332Z  INFO 10620 --- [doctor-service] [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1736517011332, current=UP, previous=STARTING]
+2025-01-10T13:50:11.337Z  INFO 10620 --- [doctor-service] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DOCTOR-SERVICE/DESKTOP-3M97090:doctor-service:0: registering service...
+2025-01-10T13:50:11.400Z  INFO 10620 --- [doctor-service] [           main] com.dental.doctor.DoctorApplication      : Started DoctorApplication in 12.741 seconds (process running for 14.027)
+2025-01-10T13:50:11.443Z  INFO 10620 --- [doctor-service] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DOCTOR-SERVICE/DESKTOP-3M97090:doctor-service:0 - registration status: 204
